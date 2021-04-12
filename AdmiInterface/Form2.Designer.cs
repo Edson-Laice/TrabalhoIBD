@@ -145,7 +145,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(33, 510);
+            this.button6.Location = new System.Drawing.Point(12, 75);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(123, 32);
             this.button6.TabIndex = 52;
@@ -160,7 +160,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(208, 510);
+            this.button7.Location = new System.Drawing.Point(199, 75);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(123, 32);
             this.button7.TabIndex = 53;
@@ -173,7 +173,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(463, 579);
+            this.ClientSize = new System.Drawing.Size(1070, 495);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
