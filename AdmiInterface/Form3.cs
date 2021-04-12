@@ -13,6 +13,7 @@ namespace AdmiInterface
 {
     public partial class Form3 : Form
     {
+        private Insercao inserir = new Insercao();
         private Validacao validar = new Validacao();
         public Form3()
         {
@@ -57,8 +58,8 @@ namespace AdmiInterface
             string msgErro = "O Espaço não pode estar vazio";
             try
             {
-                validar.campo(NomeEstudante.Text);
-                validar.campo(ApelidoEstudante.Text);
+                validar.campo(lblPnome.Text);
+                validar.campo(lblUNome.Text);
 
             }
             catch (FormatException)
@@ -89,21 +90,7 @@ namespace AdmiInterface
         private int codigo = 12000322;
         private void Button1_Click_1(object sender, EventArgs e)
         {
-           
-            string strCon = @"server=localhost;user id=root;pwd=laice;database=controlo_assiduidade;SslMode=none ";
-            MySqlConnection cn = new MySqlConnection(strCon);
             
-            MySqlCommand comm = new MySqlCommand();
-            comm.Connection = cn;
-            comm.CommandType = CommandType.Text;
-            comm.CommandText = "insert into estudante values('"+codigo+"', "+NomeEstudante.Text+", "+ApelidoEstudante.Text+" ," +
-                " "+GeneroEstudante+" , "+DataNacEstudante+" , "+EstadoCevilEstudante+", "+NacionalidadeEstudante+"" +
-                " , "+AnoDeIngresso+", "+TipoID+" , "+NumeroID+", "+EmailEstudante+", "+TelefoneEstudante+", " +
-                ""+MoradaEstudante+", )";
-            cn.Open();
-            comm.ExecuteNonQuery();
-            comm.Connection.Close();
-            MessageBox.Show("Inserido com sucesso");
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -129,6 +116,27 @@ namespace AdmiInterface
         private void Label15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_cadastrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (ArgumentException)
+            {
+
+            }
+            
+        }
+        private void mensagemErro(string msg, string caption)
+        {
+            MessageBox.Show(msg, caption,MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        private void mensagemSuceso(string msg, string caption)
+        {
+            MessageBox.Show(msg, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

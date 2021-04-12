@@ -1,10 +1,10 @@
-CREATE DATABASE  IF NOT EXISTS `controlo_assiduidade` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `controlo_assiduidade` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `controlo_assiduidade`;
 -- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
 --
 -- Host: localhost    Database: controlo_assiduidade
 -- ------------------------------------------------------
--- Server version	8.0.22
+-- Server version	5.7.31
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -36,7 +36,7 @@ CREATE TABLE `aula` (
   KEY `cod_doc` (`cod_doc`),
   CONSTRAINT `aula_ibfk_1` FOREIGN KEY (`cod_est`) REFERENCES `estudante` (`est_cod`),
   CONSTRAINT `aula_ibfk_2` FOREIGN KEY (`cod_doc`) REFERENCES `docente` (`doc_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,7 +61,7 @@ CREATE TABLE `curso` (
   `curso_duracao` varchar(10) DEFAULT NULL,
   `curso_descricao` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`curso_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,29 +74,29 @@ LOCK TABLES `curso` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `cursodisciplina`
+-- Table structure for table `curso_disciplina`
 --
 
-DROP TABLE IF EXISTS `cursodisciplina`;
+DROP TABLE IF EXISTS `curso_disciplina`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `cursodisciplina` (
+CREATE TABLE `curso_disciplina` (
   `cod_curso` varchar(10) NOT NULL,
   `cod_disc` varchar(10) NOT NULL,
   PRIMARY KEY (`cod_curso`,`cod_disc`),
   KEY `cod_disc` (`cod_disc`),
-  CONSTRAINT `cursodisciplina_ibfk_1` FOREIGN KEY (`cod_curso`) REFERENCES `curso` (`curso_cod`),
-  CONSTRAINT `cursodisciplina_ibfk_2` FOREIGN KEY (`cod_disc`) REFERENCES `disciplina` (`disc_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `curso_disciplina_ibfk_1` FOREIGN KEY (`cod_curso`) REFERENCES `curso` (`curso_cod`),
+  CONSTRAINT `curso_disciplina_ibfk_2` FOREIGN KEY (`cod_disc`) REFERENCES `disciplina` (`disc_cod`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cursodisciplina`
+-- Dumping data for table `curso_disciplina`
 --
 
-LOCK TABLES `cursodisciplina` WRITE;
-/*!40000 ALTER TABLE `cursodisciplina` DISABLE KEYS */;
-/*!40000 ALTER TABLE `cursodisciplina` ENABLE KEYS */;
+LOCK TABLES `curso_disciplina` WRITE;
+/*!40000 ALTER TABLE `curso_disciplina` DISABLE KEYS */;
+/*!40000 ALTER TABLE `curso_disciplina` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -113,7 +113,7 @@ CREATE TABLE `disciplina` (
   `disc_estatuto` varchar(10) DEFAULT NULL,
   `disc_credito` varchar(1) DEFAULT NULL,
   PRIMARY KEY (`disc_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,12 +149,12 @@ CREATE TABLE `docente` (
   `doc_cidade` varchar(20) DEFAULT NULL,
   `doc_localidade` varchar(20) DEFAULT NULL,
   `doc_bairro` varchar(20) DEFAULT NULL,
-  `doc_quarteirao` int DEFAULT NULL,
-  `doc_numero_casa` int DEFAULT NULL,
+  `doc_quarteirao` int(11) DEFAULT NULL,
+  `doc_numero_casa` int(11) DEFAULT NULL,
   `doc_formacao` varchar(50) DEFAULT NULL,
   `cod_disc` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`doc_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -180,6 +180,7 @@ CREATE TABLE `estudante` (
   `est_genero` char(1) DEFAULT NULL,
   `est_data_nasc` date DEFAULT NULL,
   `est_estado_civil` varchar(10) DEFAULT NULL,
+  `est_nacionalidade` varchar(30) DEFAULT NULL,
   `est_naturalidade` varchar(20) DEFAULT NULL,
   `est_data_ingresso` date DEFAULT NULL,
   `est_identidade_tipo` varchar(20) DEFAULT NULL,
@@ -190,11 +191,11 @@ CREATE TABLE `estudante` (
   `est_cidade` varchar(20) DEFAULT NULL,
   `est_localidade` varchar(20) DEFAULT NULL,
   `est_bairro` varchar(20) DEFAULT NULL,
-  `est_quarteirao` int DEFAULT NULL,
-  `est_numero_casa` int DEFAULT NULL,
+  `est_quarteirao` int(11) DEFAULT NULL,
+  `est_numero_casa` int(11) DEFAULT NULL,
   `cod_curso` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`est_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -220,7 +221,7 @@ CREATE TABLE `sala` (
   `sala_pavilhao` varchar(4) DEFAULT NULL,
   `sala_piso` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`sala_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -244,7 +245,7 @@ CREATE TABLE `turma` (
   `turma_regime` varchar(20) DEFAULT NULL,
   `turma_capacidade` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`turma_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -273,7 +274,7 @@ CREATE TABLE `turma_ocupada` (
   CONSTRAINT `turma_ocupada_ibfk_1` FOREIGN KEY (`cod_turma`) REFERENCES `turma` (`turma_cod`),
   CONSTRAINT `turma_ocupada_ibfk_2` FOREIGN KEY (`cod_est`) REFERENCES `estudante` (`est_cod`),
   CONSTRAINT `turma_ocupada_ibfk_3` FOREIGN KEY (`cod_sala`) REFERENCES `sala` (`sala_cod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -284,14 +285,6 @@ LOCK TABLES `turma_ocupada` WRITE;
 /*!40000 ALTER TABLE `turma_ocupada` DISABLE KEYS */;
 /*!40000 ALTER TABLE `turma_ocupada` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'controlo_assiduidade'
---
-
---
--- Dumping routines for database 'controlo_assiduidade'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -302,4 +295,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-09 17:05:20
+-- Dump completed on 2021-04-12 15:27:03
