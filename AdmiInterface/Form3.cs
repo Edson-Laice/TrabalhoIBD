@@ -85,20 +85,50 @@ namespace AdmiInterface
         {
 
         }
-
+       
+        private int codigo = 12000322;
         private void Button1_Click_1(object sender, EventArgs e)
         {
+           
             string strCon = @"server=localhost;user id=root;pwd=laice;database=controlo_assiduidade;SslMode=none ";
             MySqlConnection cn = new MySqlConnection(strCon);
             
             MySqlCommand comm = new MySqlCommand();
             comm.Connection = cn;
             comm.CommandType = CommandType.Text;
-            comm.CommandText = "insert into estudante values('"+NomeEstudante.Text+"', "+ApelidoEstudante.Text+")";
+            comm.CommandText = "insert into estudante values('"+codigo+"', "+NomeEstudante.Text+", "+ApelidoEstudante.Text+" ," +
+                " "+GeneroEstudante+" , "+DataNacEstudante+" , "+EstadoCevilEstudante+", "+NacionalidadeEstudante+"" +
+                " , "+AnoDeIngresso+", "+TipoID+" , "+NumeroID+", "+EmailEstudante+", "+TelefoneEstudante+", " +
+                ""+MoradaEstudante+", )";
             cn.Open();
             comm.ExecuteNonQuery();
             comm.Connection.Close();
             MessageBox.Show("Inserido com sucesso");
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FotoDocente_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label15_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

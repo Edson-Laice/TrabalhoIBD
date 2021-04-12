@@ -8,6 +8,10 @@ namespace AdmiInterface
 {
     class insercao
     {
+        public void incerir()
+        {
 
+
+        }
     }
 }
