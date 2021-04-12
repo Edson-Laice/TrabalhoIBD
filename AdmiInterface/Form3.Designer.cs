@@ -29,11 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+<<<<<<< HEAD
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.label23 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label22 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+=======
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.NumeroID = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.TipoID = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.SalaEs = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.TurmaES = new System.Windows.Forms.ComboBox();
+            this.AnoDeIngresso = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nomeArquivo = new System.Windows.Forms.Label();
+            this.fotoDocente = new System.Windows.Forms.Button();
+            this.btn_cadastrar = new System.Windows.Forms.Button();
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
             this.label18 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -44,6 +61,7 @@
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.label12 = new System.Windows.Forms.Label();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -163,6 +181,234 @@
             this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(179, 33);
             this.bunifuMaterialTextbox5.TabIndex = 189;
             this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+=======
+            this.NacionalidadeEstudante = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.DataNacEstudante = new System.Windows.Forms.DateTimePicker();
+            this.lblUNome = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblPnome = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FotoUsuario)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.NumeroID);
+            this.bunifuGradientPanel1.Controls.Add(this.label16);
+            this.bunifuGradientPanel1.Controls.Add(this.TipoID);
+            this.bunifuGradientPanel1.Controls.Add(this.label15);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuSeparator1);
+            this.bunifuGradientPanel1.Controls.Add(this.SalaEs);
+            this.bunifuGradientPanel1.Controls.Add(this.label14);
+            this.bunifuGradientPanel1.Controls.Add(this.TurmaES);
+            this.bunifuGradientPanel1.Controls.Add(this.AnoDeIngresso);
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.nomeArquivo);
+            this.bunifuGradientPanel1.Controls.Add(this.fotoDocente);
+            this.bunifuGradientPanel1.Controls.Add(this.btn_cadastrar);
+            this.bunifuGradientPanel1.Controls.Add(this.label18);
+            this.bunifuGradientPanel1.Controls.Add(this.label17);
+            this.bunifuGradientPanel1.Controls.Add(this.label13);
+            this.bunifuGradientPanel1.Controls.Add(this.label12);
+            this.bunifuGradientPanel1.Controls.Add(this.label11);
+            this.bunifuGradientPanel1.Controls.Add(this.FotoUsuario);
+            this.bunifuGradientPanel1.Controls.Add(this.EmailEstudante);
+            this.bunifuGradientPanel1.Controls.Add(this.label10);
+            this.bunifuGradientPanel1.Controls.Add(this.TelefoneEstudante);
+            this.bunifuGradientPanel1.Controls.Add(this.label9);
+            this.bunifuGradientPanel1.Controls.Add(this.GeneroEstudante);
+            this.bunifuGradientPanel1.Controls.Add(this.EstadoCevilEstudante);
+            this.bunifuGradientPanel1.Controls.Add(this.label8);
+            this.bunifuGradientPanel1.Controls.Add(this.MoradaEstudante);
+            this.bunifuGradientPanel1.Controls.Add(this.label7);
+            this.bunifuGradientPanel1.Controls.Add(this.NacionalidadeEstudante);
+            this.bunifuGradientPanel1.Controls.Add(this.label6);
+            this.bunifuGradientPanel1.Controls.Add(this.label5);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.DataNacEstudante);
+            this.bunifuGradientPanel1.Controls.Add(this.lblUNome);
+            this.bunifuGradientPanel1.Controls.Add(this.label3);
+            this.bunifuGradientPanel1.Controls.Add(this.lblPnome);
+            this.bunifuGradientPanel1.Controls.Add(this.label2);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Maroon;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(943, 498);
+            this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // NumeroID
+            // 
+            this.NumeroID.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumeroID.Location = new System.Drawing.Point(533, 219);
+            this.NumeroID.Name = "NumeroID";
+            this.NumeroID.Size = new System.Drawing.Size(205, 29);
+            this.NumeroID.TabIndex = 140;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Leelawadee UI", 14F);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(586, 182);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(104, 25);
+            this.label16.TabIndex = 139;
+            this.label16.Text = "Numero ID";
+            // 
+            // TipoID
+            // 
+            this.TipoID.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TipoID.FormattingEnabled = true;
+            this.TipoID.Items.AddRange(new object[] {
+            "BI",
+            "Carta de Condução",
+            "Paçaporte",
+            "Cartão de Eleitor"});
+            this.TipoID.Location = new System.Drawing.Point(561, 142);
+            this.TipoID.Name = "TipoID";
+            this.TipoID.Size = new System.Drawing.Size(157, 29);
+            this.TipoID.TabIndex = 138;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Leelawadee UI", 14F);
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(557, 105);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(161, 25);
+            this.label15.TabIndex = 137;
+            this.label15.Text = "Tipo de Bilhete ID";
+            this.label15.Click += new System.EventHandler(this.Label15_Click);
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(-4, 38);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(947, 10);
+            this.bunifuSeparator1.TabIndex = 136;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // SalaEs
+            // 
+            this.SalaEs.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalaEs.FormattingEnabled = true;
+            this.SalaEs.Items.AddRange(new object[] {
+            "Solteiro",
+            "Casado",
+            "Viuvo"});
+            this.SalaEs.Location = new System.Drawing.Point(860, 359);
+            this.SalaEs.Name = "SalaEs";
+            this.SalaEs.Size = new System.Drawing.Size(65, 29);
+            this.SalaEs.TabIndex = 135;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Leelawadee UI", 14F);
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(859, 320);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 25);
+            this.label14.TabIndex = 134;
+            this.label14.Text = "Sala";
+            // 
+            // TurmaES
+            // 
+            this.TurmaES.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TurmaES.FormattingEnabled = true;
+            this.TurmaES.Items.AddRange(new object[] {
+            "Solteiro",
+            "Casado",
+            "Viuvo"});
+            this.TurmaES.Location = new System.Drawing.Point(762, 359);
+            this.TurmaES.Name = "TurmaES";
+            this.TurmaES.Size = new System.Drawing.Size(65, 29);
+            this.TurmaES.TabIndex = 133;
+            // 
+            // AnoDeIngresso
+            // 
+            this.AnoDeIngresso.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnoDeIngresso.Location = new System.Drawing.Point(302, 459);
+            this.AnoDeIngresso.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
+            this.AnoDeIngresso.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.AnoDeIngresso.Name = "AnoDeIngresso";
+            this.AnoDeIngresso.Size = new System.Drawing.Size(205, 29);
+            this.AnoDeIngresso.TabIndex = 132;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 131;
+            this.pictureBox1.TabStop = false;
+            // 
+            // nomeArquivo
+            // 
+            this.nomeArquivo.AutoSize = true;
+            this.nomeArquivo.BackColor = System.Drawing.Color.Transparent;
+            this.nomeArquivo.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.nomeArquivo.ForeColor = System.Drawing.Color.Maroon;
+            this.nomeArquivo.Location = new System.Drawing.Point(843, 291);
+            this.nomeArquivo.Name = "nomeArquivo";
+            this.nomeArquivo.Size = new System.Drawing.Size(97, 13);
+            this.nomeArquivo.TabIndex = 130;
+            this.nomeArquivo.Text = "Nome do Arquivo";
+            // 
+            // fotoDocente
+            // 
+            this.fotoDocente.BackColor = System.Drawing.Color.Red;
+            this.fotoDocente.FlatAppearance.BorderSize = 0;
+            this.fotoDocente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fotoDocente.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fotoDocente.ForeColor = System.Drawing.Color.White;
+            this.fotoDocente.Location = new System.Drawing.Point(808, 98);
+            this.fotoDocente.Name = "fotoDocente";
+            this.fotoDocente.Size = new System.Drawing.Size(123, 32);
+            this.fotoDocente.TabIndex = 129;
+            this.fotoDocente.Text = "Cadastar";
+            this.fotoDocente.UseVisualStyleBackColor = false;
+            this.fotoDocente.Click += new System.EventHandler(this.FotoDocente_Click_1);
+            // 
+            // btn_cadastrar
+            // 
+            this.btn_cadastrar.BackColor = System.Drawing.Color.Red;
+            this.btn_cadastrar.FlatAppearance.BorderSize = 0;
+            this.btn_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cadastrar.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cadastrar.ForeColor = System.Drawing.Color.White;
+            this.btn_cadastrar.Location = new System.Drawing.Point(802, 440);
+            this.btn_cadastrar.Name = "btn_cadastrar";
+            this.btn_cadastrar.Size = new System.Drawing.Size(123, 38);
+            this.btn_cadastrar.TabIndex = 128;
+            this.btn_cadastrar.Text = "Cadastar";
+            this.btn_cadastrar.UseVisualStyleBackColor = false;
+            this.btn_cadastrar.Click += new System.EventHandler(this.Btn_cadastrar_Click);
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
             // 
             // label18
             // 
@@ -469,7 +715,29 @@
             this.label4.TabIndex = 188;
             this.label4.Text = "Tipo de Bilhetes de ID";
             // 
+<<<<<<< HEAD
             // label5
+=======
+            // DataNacEstudante
+            // 
+            this.DataNacEstudante.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataNacEstudante.Location = new System.Drawing.Point(65, 297);
+            this.DataNacEstudante.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
+            this.DataNacEstudante.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DataNacEstudante.Name = "DataNacEstudante";
+            this.DataNacEstudante.Size = new System.Drawing.Size(205, 29);
+            this.DataNacEstudante.TabIndex = 108;
+            // 
+            // lblUNome
+            // 
+            this.lblUNome.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUNome.Location = new System.Drawing.Point(65, 219);
+            this.lblUNome.Name = "lblUNome";
+            this.lblUNome.Size = new System.Drawing.Size(205, 29);
+            this.lblUNome.TabIndex = 107;
+            // 
+            // label3
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
@@ -481,6 +749,7 @@
             this.label5.TabIndex = 187;
             this.label5.Text = "Estado Cevil";
             // 
+<<<<<<< HEAD
             // label6
             // 
             this.label6.AutoSize = true;
@@ -564,6 +833,15 @@
             this.bunifuCards3.ShadowDepth = 20;
             this.bunifuCards3.Size = new System.Drawing.Size(262, 297);
             this.bunifuCards3.TabIndex = 194;
+=======
+            // lblPnome
+            // 
+            this.lblPnome.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPnome.Location = new System.Drawing.Point(65, 142);
+            this.lblPnome.Name = "lblPnome";
+            this.lblPnome.Size = new System.Drawing.Size(205, 29);
+            this.lblPnome.TabIndex = 105;
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
             // 
             // label9
             // 
@@ -598,6 +876,7 @@
             // 
             // label10
             // 
+<<<<<<< HEAD
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Leelawadee UI", 12F);
@@ -719,6 +998,18 @@
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(158, 144);
             this.bunifuTileButton1.TabIndex = 195;
+=======
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 14F);
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(55, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(195, 25);
+            this.label1.TabIndex = 103;
+            this.label1.Text = "Registro de Estudante";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
             // 
             // Form3
             // 
@@ -753,6 +1044,7 @@
 
         #endregion
 
+<<<<<<< HEAD
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private System.Windows.Forms.Label label11;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
@@ -765,16 +1057,49 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
         private System.Windows.Forms.Label label22;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+=======
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private System.Windows.Forms.ComboBox SalaEs;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox TurmaES;
+        private System.Windows.Forms.DateTimePicker AnoDeIngresso;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label nomeArquivo;
+        private System.Windows.Forms.Button fotoDocente;
+        private System.Windows.Forms.Button btn_cadastrar;
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+<<<<<<< HEAD
         private Bunifu.Framework.UI.BunifuCards bunifuCards2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label25;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+=======
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox FotoUsuario;
+        private System.Windows.Forms.TextBox EmailEstudante;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox TelefoneEstudante;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox GeneroEstudante;
+        private System.Windows.Forms.ComboBox EstadoCevilEstudante;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox MoradaEstudante;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox NacionalidadeEstudante;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker DataNacEstudante;
+        private System.Windows.Forms.TextBox lblUNome;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox lblPnome;
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

@@ -13,6 +13,7 @@ namespace AdmiInterface
 {
     public partial class Form3 : Form
     {
+        private Insercao inserir = new Insercao();
         private Validacao validar = new Validacao();
         public Form3()
         {
@@ -30,7 +31,62 @@ namespace AdmiInterface
 
         }
 
+<<<<<<< HEAD
        
+=======
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            //Metodo para carregar ficheiros que fazem parte dos dados do usuario. Foto. Posteorimente pode ser usado para Carregar BI
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files( *.jpg; *.jpeg; *.bmp)|*.jpg; *.jpeg;*.bmp";
+            if(open.ShowDialog() == DialogResult.OK)
+            {
+                FotoUsuario.Image = new Bitmap(open.FileName);
+                nomeArquivo.Text = open.FileName;
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            // Metodo para verificar se a espacos em branco. 
+            string msgErro = "O Espaço não pode estar vazio";
+            try
+            {
+                validar.campo(lblPnome.Text);
+                validar.campo(lblUNome.Text);
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show(msgErro, "Campo Vazio");
+            }
+           
+
+
+
+        }
+
+        private void Fotousuario_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FotoDocente_Click(object sender, EventArgs e)
+        {
+
+        }
+       
+        private int codigo = 12000322;
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+>>>>>>> 75b0a1246de4999acce3bc7fa2622ec86ef3c70f
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -45,6 +101,27 @@ namespace AdmiInterface
         private void Cadastrar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_cadastrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (ArgumentException)
+            {
+
+            }
+            
+        }
+        private void mensagemErro(string msg, string caption)
+        {
+            MessageBox.Show(msg, caption,MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        private void mensagemSuceso(string msg, string caption)
+        {
+            MessageBox.Show(msg, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
